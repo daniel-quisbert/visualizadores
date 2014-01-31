@@ -1,0 +1,51 @@
+/**
+ * @author:	Daniel Quisbert 
+ * @date:	30/01/2014
+ */
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <title>Visualizador con OpenLayers</title>
+    <!--
+    	nos ayudamos con un poco de estilo CSS
+    	para poder visualizar correctamente el mapa
+    	--->
+    <style>
+    	html {
+			height: 100%;
+			overflow: hidden;
+		}
+		body {
+			height: 100%;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			font-family: tahoma, arial, helvetica, sans-serif;
+			font-size: 14px;
+			color: #333;
+		}
+		
+		#map {
+			height: 100%;
+		}
+    </style>
+  </head>
+  <body>
+    <!-- contenedor donde se mostrará el mapa
+ no necesariamente debe llevar como id 'map' 
+ puede ser cualquier otro
+ -->
+ <div id="map">
+</div>
+<!-- apuntamos a la libreria de OL en su sitio oficial
+  OjO: es importante el orden, OpenLayers es primero :D
+  -->
+  <script src="http://openlayers.org/api/OpenLayers.js"></script>
+
+<!-- misfunciones.js es el archivo  donde crearemos 
+ nuestra(s) funcion(es) para visualizar el mapa   
+ -->
+ <script src="misfunciones.js"></script>
+  </body>
+</html>
